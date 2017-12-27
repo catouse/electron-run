@@ -1,0 +1,22 @@
+{
+  "name": "electron-run",
+  "productName": "Electron Run",
+  "version": "1.0.0",
+  "description": "Electron 代码运行测试工具",
+  "main": "./main.js",
+  "author": {
+    "name": "cnezsoft",
+    "email": "sunhao@cnezsoft.com",
+    "url": "http://cnezsoft.com"
+  },
+  "homepage": "http://xuan.im",
+  "company": "青岛易软天创网络科技有限公司",
+  "license": "ZPL 1.2",
+  "bugs": {
+    "url": "https://github.com/easysoft/electron-run/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/easysoft/electron-run.git"
+  }
+}
