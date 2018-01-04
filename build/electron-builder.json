@@ -1,6 +1,7 @@
 {
     "productName": "electron-run",
     "appId": "com.cnezsoft.electron-run",
+    "electronVersion": "1.2.8",
     "compression": "maximum",
     "artifactName": "${productName}-${version}-${os}-${arch}.${ext}",
     "extraResources": [
