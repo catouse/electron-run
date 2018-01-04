@@ -1,10 +1,9 @@
 import React, {Component} from 'react';
+import Editor from '../editor';
 
 class Index extends Component {
     render() {
-        return (<div>
-            Hello world！
-        </div>);
+        return <Editor className="dock" />;
     }
 }
 

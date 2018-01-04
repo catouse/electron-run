@@ -370,7 +370,9 @@ class AppRemote {
      */
     quit() {
         this.closeMainWindow();
-        this.tray.destroy();
+        if (this.tray) {
+            this.tray.destroy();
+        }
         globalShortcut.unregisterAll();
         ElectronApp.quit();
     }

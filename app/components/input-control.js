@@ -38,7 +38,8 @@ class InputControl extends Component {
         children: null,
         defaultValue: undefined,
         hotkeyScope: null,
-        hotKeys: null
+        hotKeys: null,
+        readOnly: false
     };
 
     static propTypes = {
@@ -61,6 +62,7 @@ class InputControl extends Component {
         name: PropTypes.string,
         hotkeyScope: PropTypes.string,
         hotKeys: PropTypes.object,
+        readOnly: PropTypes.bool,
     }
 
     constructor(props) {
@@ -134,12 +136,14 @@ class InputControl extends Component {
             children,
             hotkeyScope,
             hotKeys,
+            readOnly,
             ...other
         } = this.props;
 
         return (<div className={HTML.classes('control', className, {disabled})} {...other}>
             {label !== false && <label htmlFor={this.controlName} style={labelStyle}>{label}</label>}
             <input
+                readOnly={readOnly}
                 data-hotkeyScope={this.hotkeyScope}
                 disabled={!!disabled}
                 ref={e => {this.input = e;}}

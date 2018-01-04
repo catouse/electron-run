@@ -9,3 +9,30 @@
 
 @import "./basic.less";
 
+.terminal-base {
+  width: 100%;
+  outline: none;
+  background-color: #e5e5e5;
+
+  pre {
+    margin-bottom: 0;
+    background: none;
+    padding: 0;
+    word-break: break-all;
+    word-wrap: break-word;
+    font-size: 12px;
+    line-height: 18px;
+    white-space: pre-wrap;
+  }
+}
+.terminal-main-input {
+  width: calc(100% - 10px);
+  border: none;
+
+  &:focus {
+    outline: none;
+  }
+}
+.terminal-container-main {
+  outline: none;
+}
